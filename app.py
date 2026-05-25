@@ -658,6 +658,12 @@ def handle_error(exc):
     ), 500
 
 
+@app.route('/favicon.ico')
+def favicon():
+    return '', 204
+
+
+
 # ======================================
 # MAIN RUNNER
 # ======================================

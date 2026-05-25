@@ -1899,3 +1899,1959 @@ Traceback (most recent call last):
   File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
     raise NotFound() from None
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 14:43:22 | ERROR | ppe.app | Thread-18 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 14:44:16 | ERROR | ppe.app | Thread-36 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 14:44:58 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:58 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:58 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:58 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:58 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:58 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:58 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:58 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:58 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:58 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:59 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:59 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:59 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:59 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:59 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:59 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:59 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:59 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:59 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:44:59 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:00 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:00 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:00 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:00 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:00 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:00 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:00 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:00 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:00 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:00 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:00 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:00 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:01 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:01 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:01 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:01 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:01 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:01 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:01 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:01 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:01 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:01 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:01 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:02 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:02 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:02 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:02 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:02 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:02 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:02 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:02 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:02 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:02 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:03 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:03 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:03 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:03 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:03 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:03 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:03 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:03 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:04 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:04 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:04 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:04 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:04 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:04 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:04 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:04 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:04 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:05 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:05 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:05 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:05 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:05 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:05 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:05 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:05 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:05 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:05 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:06 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:06 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:06 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:06 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:06 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:06 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:06 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:07 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:07 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:07 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:07 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:07 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:07 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:07 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:07 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:07 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:08 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:08 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:08 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:08 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:08 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:08 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:08 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:08 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:08 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:08 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:08 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:09 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:09 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:09 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:09 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:09 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:09 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:09 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:09 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:09 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:09 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:09 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:10 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:10 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:10 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:10 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:10 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:10 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:10 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:10 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:10 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:10 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:10 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:11 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:11 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:11 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:11 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:11 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:11 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:11 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:11 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:11 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:11 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:11 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:12 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:12 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:12 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:12 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:12 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:12 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:12 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:12 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:12 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:12 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:12 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:12 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:13 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:13 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:13 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:13 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:13 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:13 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:13 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:13 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:13 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:13 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:13 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:14 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:14 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:14 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:14 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:14 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:14 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:14 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:14 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:14 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:14 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:14 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:15 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:15 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:15 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:15 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:15 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:15 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:15 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:15 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:15 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:15 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:15 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:15 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:16 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:16 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:16 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:16 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:16 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:16 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:16 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:16 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:16 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:16 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:16 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:17 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:17 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:17 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:17 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:17 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:17 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:17 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:17 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:17 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:17 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:17 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:18 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:18 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:18 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:18 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:18 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:18 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:18 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:18 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:18 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:18 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:18 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:19 | ERROR | ppe.stream_manager | process-webcam_075170a0 | Processing loop failed for webcam_075170a0: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/stream_manager.py", line 467, in _process_loop
+    detections = self.tracker.update(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/utils/tracker_manager.py", line 233, in update
+    ] = reid_result["identity_id"]
+TypeError: 'NoneType' object is not subscriptable
+2026-05-25 14:45:27 | ERROR | ppe.app | Thread-78 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 14:54:57 | ERROR | ppe.app | Thread-27 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 14:55:10 | ERROR | ppe.app | Thread-42 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 14:55:56 | ERROR | ppe.app | Thread-76 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:00:45 | ERROR | ppe.app | Thread-18 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:00:55 | ERROR | ppe.app | Thread-33 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:00:57 | ERROR | ppe.app | Thread-47 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:01:00 | ERROR | ppe.app | Thread-62 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:01:11 | ERROR | ppe.app | Thread-77 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:02:30 | ERROR | ppe.app | Thread-127 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:15:40 | ERROR | ppe.app | Thread-18 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:15:42 | ERROR | ppe.app | Thread-33 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:15:48 | ERROR | ppe.app | Thread-46 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:15:57 | ERROR | ppe.app | Thread-64 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:16:31 | ERROR | ppe.app | Thread-97 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:17:11 | ERROR | ppe.app | Thread-124 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:17:47 | ERROR | ppe.app | Thread-155 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:28:46 | ERROR | ppe.app | Thread-18 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:28:48 | ERROR | ppe.app | Thread-35 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:28:50 | ERROR | ppe.app | Thread-44 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:29:57 | ERROR | ppe.app | Thread-69 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:30:12 | ERROR | ppe.app | Thread-85 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:31:57 | ERROR | ppe.app | Thread-145 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:31:58 | ERROR | ppe.app | Thread-160 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:31:58 | ERROR | ppe.app | Thread-170 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:32:01 | ERROR | ppe.app | Thread-194 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:48:02 | ERROR | ppe.app | Thread-27 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:48:06 | ERROR | ppe.app | Thread-40 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:48:18 | ERROR | ppe.app | Thread-49 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 15:48:21 | ERROR | ppe.app | Thread-70 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
