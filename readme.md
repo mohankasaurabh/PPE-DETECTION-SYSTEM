@@ -6,8 +6,7 @@ This project detects whether workers are wearing required safety equipment such 
 
 - 🪖 Helmet
 - 🦺 Safety Vest
-- 😷 Mask
-- 👢 Safety Shoes *(optional future support)*
+
 
 The system supports:
 
