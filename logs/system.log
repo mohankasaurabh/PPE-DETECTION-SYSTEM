@@ -3941,3 +3941,47 @@ werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on 
 2026-05-25 15:48:23 | INFO | ppe.detector | Thread-71 | Loaded YOLO model from /Users/macbook/Downloads/PPE-DETECTION-SYSTEM/best.pt with classes: {0: 'helmet', 1: 'gloves', 2: 'vest', 3: 'boots', 4: 'goggles', 5: 'none', 6: 'Person', 7: 'no_helmet', 8: 'no_goggle', 9: 'no_gloves', 10: 'no_boots'}
 2026-05-25 15:48:26 | INFO | ppe.event_manager | process-webcam_075170a0 | Created event evt_a2b01e0834904a61 for ('webcam_075170a0', 'gid_d074b67dab3d', 'missing_helmet')
 2026-05-25 15:48:26 | INFO | ppe.event_manager | process-webcam_075170a0 | Created event evt_45d250b9d9a14d48 for ('webcam_075170a0', 'gid_d074b67dab3d', 'missing_vest')
+2026-05-25 17:19:27 | INFO | ppe.database | MainThread | Database initialized at /Users/macbook/Downloads/PPE-DETECTION-SYSTEM/ppe.db
+2026-05-25 17:19:37 | ERROR | ppe.app | Thread-34 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 17:19:37 | ERROR | ppe.app | Thread-35 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-25 17:19:56 | INFO | ppe.detector | Thread-92 | Loaded YOLO model from /Users/macbook/Downloads/PPE-DETECTION-SYSTEM/best.pt with classes: {0: 'helmet', 1: 'gloves', 2: 'vest', 3: 'boots', 4: 'goggles', 5: 'none', 6: 'Person', 7: 'no_helmet', 8: 'no_goggle', 9: 'no_gloves', 10: 'no_boots'}
+2026-05-25 17:19:59 | INFO | ppe.event_manager | process-webcam_075170a0 | Created event evt_58d2aa7037ff4ab3 for ('webcam_075170a0', 'gid_7d7674618cd4', 'missing_helmet')
+2026-05-25 17:19:59 | INFO | ppe.event_manager | process-webcam_075170a0 | Created event evt_ac5968ee182741f3 for ('webcam_075170a0', 'gid_7d7674618cd4', 'missing_vest')
+2026-05-25 19:18:01 | INFO | ppe.database | MainThread | Database initialized at /Users/macbook/Downloads/PPE-DETECTION-SYSTEM/ppe.db
+2026-05-25 19:18:32 | INFO | ppe.detector | Thread-62 | Loaded YOLO model from /Users/macbook/Downloads/PPE-DETECTION-SYSTEM/best.pt with classes: {0: 'helmet', 1: 'gloves', 2: 'vest', 3: 'boots', 4: 'goggles', 5: 'none', 6: 'Person', 7: 'no_helmet', 8: 'no_goggle', 9: 'no_gloves', 10: 'no_boots'}
+2026-05-25 19:18:34 | INFO | ppe.event_manager | process-webcam_075170a0 | Created event evt_6fbc136376394161 for ('webcam_075170a0', 'gid_a8d1e0ee5324', 'missing_helmet')
+2026-05-25 19:18:34 | INFO | ppe.event_manager | process-webcam_075170a0 | Created event evt_20bb7a7f811e4c40 for ('webcam_075170a0', 'gid_a8d1e0ee5324', 'missing_vest')
+2026-05-25 19:24:11 | INFO | ppe.database | MainThread | Database initialized at /Users/macbook/Downloads/PPE-DETECTION-SYSTEM/ppe.db
+2026-05-25 19:24:29 | INFO | ppe.detector | Thread-63 | Loaded YOLO model from /Users/macbook/Downloads/PPE-DETECTION-SYSTEM/best.pt with classes: {0: 'helmet', 1: 'gloves', 2: 'vest', 3: 'boots', 4: 'goggles', 5: 'none', 6: 'Person', 7: 'no_helmet', 8: 'no_goggle', 9: 'no_gloves', 10: 'no_boots'}
+2026-05-25 19:24:31 | INFO | ppe.event_manager | process-webcam_075170a0 | Created event evt_fb066c14d7454d29 for ('webcam_075170a0', 'gid_bd8660f79e14', 'missing_helmet')
+2026-05-25 19:24:31 | INFO | ppe.event_manager | process-webcam_075170a0 | Created event evt_454a99a101294918 for ('webcam_075170a0', 'gid_bd8660f79e14', 'missing_vest')
+2026-05-25 19:25:12 | INFO | ppe.database | MainThread | Database initialized at /Users/macbook/Downloads/PPE-DETECTION-SYSTEM/ppe.db
+2026-05-25 22:03:49 | INFO | ppe.database | MainThread | Database initialized at /Users/macbook/Downloads/PPE-DETECTION-SYSTEM/ppe.db
