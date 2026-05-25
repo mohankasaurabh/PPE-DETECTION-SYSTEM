@@ -1,0 +1,511 @@
+{% extends 'base.html' %}
+
+{% block title %}
+History
+{% endblock %}
+
+{% block page_heading %}
+Event & Violation History
+{% endblock %}
+
+{% block content %}
+
+<!--
+# ======================================
+# HISTORY PAGE
+# ======================================
+
+# ======================================
+# PURPOSE
+# ======================================
+Explain:
+- Displays all historical PPE violations and events.
+- Supports enterprise incident management workflow.
+- Allows evidence viewing, single delete, bulk delete, and delete all operations.
+-->
+
+<style>
+
+.history-card {
+    background: #111827;
+    border-radius: 18px;
+    padding: 20px;
+    border: 1px solid #1f2937;
+    color: white;
+    overflow-x: auto;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.history-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.delete-selected-btn {
+    background: #ef4444;
+    border: none;
+    color: white;
+}
+
+.delete-selected-btn:hover {
+    background: #dc2626;
+}
+
+.delete-all-btn {
+    background: transparent;
+    border: 1px solid #ef4444;
+    color: #ef4444;
+}
+
+.delete-all-btn:hover {
+    background: rgba(239,68,68,0.1);
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history-table th {
+    background: rgba(255,255,255,0.04);
+    color: white;
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #374151;
+}
+
+.history-table td {
+    padding: 14px;
+    border-bottom: 1px solid #1f2937;
+    vertical-align: middle;
+}
+
+.history-table tr:hover {
+    background: rgba(255,255,255,0.02);
+}
+
+.state-active {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+.state-resolved {
+    color: #10b981;
+    font-weight: bold;
+}
+
+.evidence-image {
+    width: 80px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #374151;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.open-btn {
+    background: #3b82f6;
+    color: white;
+    border: none;
+}
+
+.delete-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+}
+
+.no-events {
+    text-align: center;
+    opacity: 0.7;
+    padding: 40px;
+}
+
+.checkbox-cell {
+    width: 40px;
+}
+
+</style>
+
+<div class="history-card">
+
+    <!-- ======================================
+    HEADER
+    ====================================== -->
+
+    <div class="history-header">
+
+        <h2>
+            Events
+        </h2>
+
+        <div class="history-actions">
+
+            <button
+                class="btn delete-selected-btn"
+                onclick="deleteSelected()"
+            >
+                Delete Selected
+            </button>
+
+            <button
+                class="btn delete-all-btn"
+                onclick="deleteAll()"
+            >
+                Delete All
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- ======================================
+    TABLE
+    ====================================== -->
+
+    {% if events %}
+
+    <table class="history-table">
+
+        <thead>
+
+            <tr>
+
+                <th class="checkbox-cell">
+
+                    <input
+                        type="checkbox"
+                        id="selectAll"
+                        onclick="toggleAll(this)"
+                    >
+
+                </th>
+
+                <th>Event</th>
+
+                <th>Camera</th>
+
+                <th>Track</th>
+
+                <th>Type</th>
+
+                <th>State</th>
+
+                <th>Start</th>
+
+                <th>Evidence</th>
+
+                <th>Actions</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            {% for e in events %}
+
+            <tr>
+
+                <!-- ======================================
+                CHECKBOX
+                ====================================== -->
+
+                <td>
+
+                    <input
+                        type="checkbox"
+                        class="eventCheckbox"
+                        value="{{ e.event_id }}"
+                    >
+
+                </td>
+
+                <!-- ======================================
+                EVENT DATA
+                ====================================== -->
+
+                <td>
+
+                    {{ e.event_id }}
+
+                </td>
+
+                <td>
+
+                    {{ e.camera_id }}
+
+                </td>
+
+                <td>
+
+                    {{ e.track_id }}
+
+                </td>
+
+                <td>
+
+                    {{ e.violation_type }}
+
+                </td>
+
+                <td>
+
+                    <span class="{% if e.state == 'ACTIVE' %}state-active{% else %}state-resolved{% endif %}">
+
+                        {{ e.state }}
+
+                    </span>
+
+                </td>
+
+                <td>
+
+                    {{ e.timestamp_start }}
+
+                </td>
+
+                <!-- ======================================
+                EVIDENCE
+                ====================================== -->
+
+                <td>
+
+                    {% if e.screenshot_path %}
+
+                    <a
+                        href="{{ e.screenshot_path }}"
+                        target="_blank"
+                    >
+
+                        <img
+                            src="{{ e.screenshot_path }}"
+                            class="evidence-image"
+                        >
+
+                    </a>
+
+                    {% else %}
+
+                    No Evidence
+
+                    {% endif %}
+
+                </td>
+
+                <!-- ======================================
+                ACTIONS
+                ====================================== -->
+
+                <td>
+
+                    <div class="action-buttons">
+
+                        {% if e.screenshot_path %}
+
+                        <a
+                            href="{{ e.screenshot_path }}"
+                            target="_blank"
+                            class="btn btn-sm open-btn"
+                        >
+                            Open
+                        </a>
+
+                        {% endif %}
+
+                        <button
+                            class="btn btn-sm delete-btn"
+                            onclick="deleteEvent('{{ e.event_id }}')"
+                        >
+                            Delete
+                        </button>
+
+                    </div>
+
+                </td>
+
+            </tr>
+
+            {% endfor %}
+
+        </tbody>
+
+    </table>
+
+    {% else %}
+
+    <div class="no-events">
+
+        No events available.
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+<!-- ======================================
+JAVASCRIPT
+====================================== -->
+
+<script>
+
+function toggleAll(source) {
+
+    const checkboxes =
+        document.querySelectorAll(".eventCheckbox");
+
+    checkboxes.forEach(cb => {
+        cb.checked = source.checked;
+    });
+
+}
+
+
+async function deleteEvent(eventId) {
+
+    const confirmDelete = confirm(
+        "Delete this event?"
+    );
+
+    if (!confirmDelete) return;
+
+    try {
+
+        const response = await fetch(
+            `/api/events/${eventId}`,
+            {
+                method: "DELETE"
+            }
+        );
+
+        const data = await response.json();
+
+        if (data.ok) {
+
+            location.reload();
+
+        }
+
+    } catch(error) {
+
+        console.error(error);
+
+        alert("Error deleting event.");
+
+    }
+
+}
+
+
+async function deleteSelected() {
+
+    const selected = [];
+
+    document
+        .querySelectorAll(".eventCheckbox:checked")
+        .forEach(cb => {
+            selected.push(cb.value);
+        });
+
+    if (!selected.length) {
+
+        alert("No events selected.");
+
+        return;
+    }
+
+    const confirmDelete = confirm(
+        "Delete selected events?"
+    );
+
+    if (!confirmDelete) return;
+
+    try {
+
+        const response = await fetch(
+            "/api/events/delete-selected",
+            {
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+                    ids: selected
+                })
+            }
+        );
+
+        const data = await response.json();
+
+        if (data.ok) {
+
+            location.reload();
+
+        }
+
+    } catch(error) {
+
+        console.error(error);
+
+        alert("Error deleting selected events.");
+
+    }
+
+}
+
+
+async function deleteAll() {
+
+    const confirmDelete = confirm(
+        "Delete ALL events?"
+    );
+
+    if (!confirmDelete) return;
+
+    try {
+
+        const response = await fetch(
+            "/api/events/delete-all",
+            {
+                method: "DELETE"
+            }
+        );
+
+        const data = await response.json();
+
+        if (data.ok) {
+
+            location.reload();
+
+        }
+
+    } catch(error) {
+
+        console.error(error);
+
+        alert("Error deleting all events.");
+
+    }
+
+}
+
+</script>
+
+{% endblock %}

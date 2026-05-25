@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Image Detection{% endblock %}
+{% block page_heading %}Image Upload Detection{% endblock %}
+{% block content %}
+<!--
+# ======================================
+# IMAGE PAGE
+# ======================================
+
+# ======================================
+# PURPOSE
+# ======================================
+Explain:
+- Allows safety users to upload static images for PPE detection and evidence review.
+- Uses the same association and compliance logic as live streaming, without ByteTrack persistence.
+-->
+<div class="card panel narrow">
+  <h2>Upload Site Image</h2>
+  <form method="post" enctype="multipart/form-data">
+    <input class="form-control mb-3" type="file" name="image" accept="image/*" required>
+    <button class="btn btn-primary">Run Detection</button>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Analytics{% endblock %}
+{% block page_heading %}Analytics{% endblock %}
+{% block content %}
+<!--
+# ======================================
+# ANALYTICS PAGE
+# ======================================
+
+# ======================================
+# PURPOSE
+# ======================================
+Explain:
+- Shows aggregate compliance and violation analytics.
+- This can later be extended with heatmaps, zone analytics, shift-wise reporting, and CSV/PDF exports.
+-->
+<section class="grid cards-grid">
+  <div class="card kpi"><span>Total Violations</span><strong>{{ analytics.total_violations }}</strong></div>
+  <div class="card kpi"><span>Active Events</span><strong>{{ analytics.active_events }}</strong></div>
+  <div class="card kpi"><span>Compliance</span><strong>{{ analytics.compliance_pct }}%</strong></div>
+</section>
+<section class="grid two-col mt-4">
+  <div class="card panel"><h2>Violation Type JSON</h2><pre class="json-box">{{ analytics.violations_by_type|tojson(indent=2) }}</pre></div>
+  <div class="card panel"><h2>Camera JSON</h2><pre class="json-box">{{ analytics.violations_by_camera|tojson(indent=2) }}</pre></div>
+</section>
+{% endblock %}

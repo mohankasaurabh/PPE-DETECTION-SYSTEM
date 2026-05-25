@@ -1,0 +1,400 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Webcam
+{% endblock %}
+
+{% block page_heading %}
+Webcam Monitoring
+{% endblock %}
+
+{% block content %}
+
+<!--
+# ======================================
+# WEBCAM PAGE
+# ======================================
+
+# ======================================
+# PURPOSE
+# ======================================
+Explain:
+- Shows all registered webcam sources.
+- Provides enterprise live monitoring interface.
+- Displays real-time PPE alerts in sidebar.
+- Supports live monitoring workflows.
+-->
+
+<style>
+
+.monitor-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 20px;
+    align-items: start;
+}
+
+.monitor-main {
+    width: 100%;
+}
+
+.camera-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 20px;
+}
+
+.camera-card {
+    background: #111827;
+    border-radius: 18px;
+    padding: 18px;
+    border: 1px solid #1f2937;
+    color: white;
+    box-shadow: 0 0 18px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.camera-card:hover {
+    transform: translateY(-4px);
+}
+
+.camera-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.camera-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.camera-status {
+    background: rgba(16,185,129,0.15);
+    color: #10b981;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.live-feed {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid #1f2937;
+    background: black;
+    min-height: 320px;
+    object-fit: cover;
+}
+
+.camera-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.camera-actions button {
+    flex: 1;
+}
+
+.alert-sidebar {
+    background: #111827;
+    border-radius: 18px;
+    padding: 20px;
+    border: 1px solid #1f2937;
+    height: 88vh;
+    overflow-y: auto;
+    position: sticky;
+    top: 20px;
+}
+
+.alert-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.alert-card {
+    background: rgba(239,68,68,0.12);
+    border-left: 5px solid #ef4444;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 15px;
+    color: white;
+    animation: fadeIn 0.3s ease;
+}
+
+.alert-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #f87171;
+}
+
+.alert-person {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.alert-time {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 8px;
+}
+
+.no-alerts {
+    opacity: 0.7;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+.alert-image {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #374151;
+}
+@media(max-width: 1100px) {
+
+    .monitor-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .alert-sidebar {
+        height: auto;
+        position: relative;
+        top: unset;
+    }
+
+}
+
+</style>
+
+<div class="monitor-layout">
+
+    <!-- ======================================
+    MAIN MONITOR AREA
+    ====================================== -->
+
+    <div class="monitor-main">
+
+        <div class="card panel">
+
+            <div class="panel-header">
+
+                <h2>
+                    Webcam Sources
+                </h2>
+
+                <a
+                    class="btn btn-primary btn-sm"
+                    href="{{ url_for('camera_manager_page') }}"
+                >
+                    Register Webcam
+                </a>
+
+            </div>
+
+            <div class="camera-grid">
+
+                {% for camera in cameras %}
+
+                <div class="camera-card">
+
+                    <!-- ======================================
+                    CAMERA HEADER
+                    ====================================== -->
+
+                    <div class="camera-header">
+
+                        <div class="camera-title">
+
+                            {{ camera.name }}
+
+                        </div>
+
+                        <div class="camera-status">
+
+                            LIVE
+
+                        </div>
+
+                    </div>
+
+                    <!-- ======================================
+                    LIVE FEED
+                    ====================================== -->
+
+                    <img
+                        src="{{ url_for('video_feed', camera_id=camera.camera_id) }}"
+                        class="live-feed"
+                    >
+
+                    <!-- ======================================
+                    CAMERA ACTIONS
+                    ====================================== -->
+
+                    <div class="camera-actions">
+
+                        <button
+                            class="btn btn-success btn-sm"
+                            onclick="startCamera('{{ camera.camera_id }}')"
+                        >
+                            Start
+                        </button>
+
+                        <button
+                            class="btn btn-outline-danger btn-sm"
+                            onclick="stopCamera('{{ camera.camera_id }}')"
+                        >
+                            Stop
+                        </button>
+
+                    </div>
+
+                </div>
+
+                {% else %}
+
+                <div class="muted">
+
+                    No webcam registered.
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ======================================
+    LIVE ALERT SIDEBAR
+    ====================================== -->
+
+    <div class="alert-sidebar">
+
+        <div class="alert-header">
+
+            🚨 Live Alerts
+
+        </div>
+
+        <div id="alertContainer">
+
+            <div class="no-alerts">
+
+                Waiting for alerts...
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ======================================
+LIVE ALERT SCRIPT
+====================================== -->
+
+<script>
+
+async function loadAlerts() {
+
+    try {
+
+        const response = await fetch("/api/latest-alerts");
+
+        const alerts = await response.json();
+
+        const container =
+            document.getElementById("alertContainer");
+
+        container.innerHTML = "";
+
+        if (!alerts.length) {
+
+            container.innerHTML = `
+                <div class="no-alerts">
+                    No recent violations.
+                </div>
+            `;
+
+            return;
+        }
+
+        alerts.forEach(alert => {
+
+            const card = `
+    <div class="alert-card">
+
+        ${
+            alert.snapshot
+            ?
+            `
+            <img
+                src="${alert.snapshot}"
+                class="alert-image"
+            >
+            `
+            :
+            ""
+        }
+
+        <div class="alert-title">
+            🔴 PPE Violation
+        </div>
+
+        <div class="alert-person">
+            <strong>Track ID:</strong>
+            ${alert.track_id || "Unknown"}
+        </div>
+
+        <div>
+            ${alert.violation_type || "Missing PPE"}
+        </div>
+
+        <div class="alert-time">
+            ${alert.created_at || ""}
+        </div>
+
+    </div>
+`;
+
+            container.innerHTML += card;
+        });
+
+    } catch(error) {
+
+        console.error(error);
+
+    }
+
+}
+
+loadAlerts();
+
+setInterval(loadAlerts, 3000);
+
+</script>
+
+{% endblock %}

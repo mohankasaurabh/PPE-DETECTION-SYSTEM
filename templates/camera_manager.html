@@ -1,0 +1,432 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Camera Manager
+{% endblock %}
+
+{% block page_heading %}
+Camera Manager
+{% endblock %}
+
+{% block content %}
+
+<!--
+# ======================================
+# CAMERA MANAGER
+# ======================================
+
+# ======================================
+# PURPOSE
+# ======================================
+Explain:
+- Registers RTSP and webcam camera sources and defines mandatory PPE rules per camera.
+- Provides enterprise camera lifecycle management.
+- Allows starting, stopping, and deleting cameras.
+-->
+
+<style>
+
+.camera-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.camera-card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 18px;
+    padding: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+.camera-card:hover {
+    transform: translateY(-4px);
+}
+
+.camera-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.camera-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.camera-status {
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.status-running {
+    background: rgba(16,185,129,0.2);
+    color: #10b981;
+}
+
+.status-stopped {
+    background: rgba(239,68,68,0.2);
+    color: #ef4444;
+}
+
+.camera-info {
+    margin-top: 10px;
+    opacity: 0.85;
+}
+
+.camera-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.camera-actions button {
+    flex: 1;
+}
+
+.delete-btn {
+    background: #ef4444;
+    border: none;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+}
+
+.check-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+@media(max-width: 900px) {
+
+    .camera-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
+<section class="camera-grid">
+
+    <!-- ======================================
+    ADD CAMERA PANEL
+    ====================================== -->
+
+    <div class="card panel">
+
+        <h2>Add Camera</h2>
+
+        <form method="post">
+
+            <label class="form-label">
+                Camera Name
+            </label>
+
+            <input
+                class="form-control mb-3"
+                name="name"
+                placeholder="Factory Gate Camera"
+                required
+            >
+
+            <label class="form-label">
+                Source Type
+            </label>
+
+            <select
+                class="form-select mb-3"
+                name="source_type"
+            >
+                <option value="rtsp">
+                    RTSP CCTV
+                </option>
+
+                <option value="webcam">
+                    Webcam
+                </option>
+
+            </select>
+
+            <label class="form-label">
+                Source URI
+            </label>
+
+            <input
+                class="form-control mb-3"
+                name="source_uri"
+                placeholder="rtsp://user:pass@ip:554/stream1 or 0"
+                required
+            >
+
+            <label class="form-label">
+                Mandatory PPE
+            </label>
+
+            <div class="check-grid mb-3">
+
+                {% for p in ['helmet','vest'] %}
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        name="mandatory_ppe"
+                        value="{{ p }}"
+                        {% if p in default_ppe %}checked{% endif %}
+                    >
+
+                    {{ p }}
+
+                </label>
+
+                {% endfor %}
+
+            </div>
+
+            <button class="btn btn-primary w-100">
+
+                Register Camera
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- ======================================
+    REGISTERED CAMERAS
+    ====================================== -->
+
+    <div class="card panel">
+
+        <h2>Registered Cameras</h2>
+
+        {% if cameras %}
+
+            {% for c in cameras %}
+
+            <div class="camera-card">
+
+                <!-- ======================================
+                CAMERA HEADER
+                ====================================== -->
+
+                <div class="camera-header">
+
+                    <div class="camera-title">
+
+                        {{ c.name }}
+
+                    </div>
+
+                    <div class="camera-status {% if c.status == 'running' %}status-running{% else %}status-stopped{% endif %}">
+
+                        {{ c.status }}
+
+                    </div>
+
+                </div>
+
+                <!-- ======================================
+                CAMERA INFO
+                ====================================== -->
+
+                <div class="camera-info">
+
+                    <p>
+                        <strong>Type:</strong>
+                        {{ c.source_type }}
+                    </p>
+
+                    <p>
+                        <strong>Source:</strong>
+                        {{ c.source_uri }}
+                    </p>
+
+                    <p>
+                        <strong>Camera ID:</strong>
+                        {{ c.camera_id }}
+                    </p>
+
+                </div>
+
+                <!-- ======================================
+                ACTION BUTTONS
+                ====================================== -->
+
+                <div class="camera-actions">
+
+                    <button
+                        class="btn btn-success btn-sm"
+                        onclick="startCamera('{{ c.camera_id }}')"
+                    >
+                        Start
+                    </button>
+
+                    <button
+                        class="btn btn-outline-warning btn-sm"
+                        onclick="stopCamera('{{ c.camera_id }}')"
+                    >
+                        Stop
+                    </button>
+
+                    <button
+                        class="btn delete-btn btn-sm"
+                        onclick="deleteCamera('{{ c.camera_id }}')"
+                    >
+                        Delete
+                    </button>
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        {% else %}
+
+            <div class="text-center mt-4">
+
+                No cameras registered.
+
+            </div>
+
+        {% endif %}
+
+    </div>
+
+</section>
+
+<!-- ======================================
+CAMERA CONTROL SCRIPTS
+====================================== -->
+
+<script>
+
+async function startCamera(cameraId) {
+
+    try {
+
+        const response = await fetch(
+            `/api/cameras/${cameraId}/start`,
+            {
+                method: "POST"
+            }
+        );
+
+        const data = await response.json();
+
+        if (data.ok) {
+
+            alert("Camera started successfully.");
+
+            location.reload();
+
+        } else {
+
+            alert("Failed to start camera.");
+
+        }
+
+    } catch (error) {
+
+        console.error(error);
+
+        alert("Error starting camera.");
+
+    }
+
+}
+
+
+async function stopCamera(cameraId) {
+
+    try {
+
+        const response = await fetch(
+            `/api/cameras/${cameraId}/stop`,
+            {
+                method: "POST"
+            }
+        );
+
+        const data = await response.json();
+
+        if (data.ok) {
+
+            alert("Camera stopped successfully.");
+
+            location.reload();
+
+        } else {
+
+            alert("Failed to stop camera.");
+
+        }
+
+    } catch (error) {
+
+        console.error(error);
+
+        alert("Error stopping camera.");
+
+    }
+
+}
+
+
+async function deleteCamera(cameraId) {
+
+    const confirmDelete = confirm(
+        "Are you sure you want to delete this camera?"
+    );
+
+    if (!confirmDelete) {
+        return;
+    }
+
+    try {
+
+        const response = await fetch(
+            `/api/cameras/${cameraId}`,
+            {
+                method: "DELETE"
+            }
+        );
+
+        const data = await response.json();
+
+        if (data.ok) {
+
+            alert("Camera deleted successfully.");
+
+            location.reload();
+
+        } else {
+
+            alert("Failed to delete camera.");
+
+        }
+
+    } catch (error) {
+
+        console.error(error);
+
+        alert("Error deleting camera.");
+
+    }
+
+}
+
+</script>
+
+{% endblock %}

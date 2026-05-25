@@ -1,0 +1,371 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Video Detection
+{% endblock %}
+
+{% block page_heading %}
+Video Upload Detection
+{% endblock %}
+
+{% block content %}
+
+<!--
+# ======================================
+# VIDEO PAGE
+# ======================================
+
+# ======================================
+# PURPOSE
+# ======================================
+Explain:
+- Allows offline processing of CCTV or mobile video clips.
+- Provides enterprise upload workflow.
+- Displays latest PPE violations in live sidebar.
+- Simulates industrial AI monitoring systems.
+-->
+
+<style>
+
+.video-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 20px;
+    align-items: start;
+}
+.alert-image {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #374151;
+}
+.video-main {
+    width: 100%;
+}
+
+.upload-panel {
+    background: #111827;
+    border-radius: 18px;
+    padding: 28px;
+    border: 1px solid #1f2937;
+    color: white;
+    box-shadow: 0 0 18px rgba(0,0,0,0.2);
+}
+
+.upload-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.upload-description {
+    opacity: 0.75;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.upload-box {
+    border: 2px dashed #374151;
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+    background: rgba(255,255,255,0.02);
+    transition: 0.3s;
+}
+
+.upload-box:hover {
+    border-color: #3b82f6;
+    background: rgba(59,130,246,0.06);
+}
+
+.upload-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.upload-text {
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.video-input {
+    margin-bottom: 20px;
+}
+
+.process-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.alert-sidebar {
+    background: #111827;
+    border-radius: 18px;
+    padding: 20px;
+    border: 1px solid #1f2937;
+    height: 88vh;
+    overflow-y: auto;
+    position: sticky;
+    top: 20px;
+}
+
+.alert-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.alert-card {
+    background: rgba(239,68,68,0.12);
+    border-left: 5px solid #ef4444;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 15px;
+    color: white;
+    animation: fadeIn 0.3s ease;
+}
+
+.alert-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #f87171;
+}
+
+.alert-person {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.alert-time {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 8px;
+}
+
+.no-alerts {
+    opacity: 0.7;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@media(max-width: 1100px) {
+
+    .video-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .alert-sidebar {
+        height: auto;
+        position: relative;
+        top: unset;
+    }
+
+}
+
+</style>
+
+<div class="video-layout">
+
+    <!-- ======================================
+    MAIN VIDEO AREA
+    ====================================== -->
+
+    <div class="video-main">
+
+        <div class="upload-panel">
+
+            <div class="upload-title">
+
+                🎥 Upload Detection Video
+
+            </div>
+
+            <div class="upload-description">
+
+                Upload CCTV footage, construction monitoring clips,
+                factory surveillance videos, or mobile recordings
+                for enterprise PPE compliance analysis.
+
+                <br><br>
+
+                Large videos are processed synchronously in this
+                demo build. Production deployments should use
+                Celery/RQ GPU worker queues.
+
+            </div>
+
+            <!-- ======================================
+            VIDEO UPLOAD FORM
+            ====================================== -->
+
+            <form method="post" enctype="multipart/form-data">
+
+                <div class="upload-box">
+
+                    <div class="upload-icon">
+
+                        📹
+
+                    </div>
+
+                    <div class="upload-text">
+
+                        Select a video file for PPE analysis
+
+                    </div>
+
+                    <input
+                        class="form-control video-input"
+                        type="file"
+                        name="video"
+                        accept="video/*"
+                        required
+                    >
+
+                    <button
+                        class="btn btn-primary process-btn"
+                    >
+
+                        Process Video
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- ======================================
+    LIVE ALERT SIDEBAR
+    ====================================== -->
+
+    <div class="alert-sidebar">
+
+        <div class="alert-header">
+
+            🚨 Live Alerts
+
+        </div>
+
+        <div id="alertContainer">
+
+            <div class="no-alerts">
+
+                Waiting for alerts...
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ======================================
+LIVE ALERT SCRIPT
+====================================== -->
+
+<script>
+
+async function loadAlerts() {
+
+    try {
+
+        const response = await fetch("/api/latest-alerts");
+
+        const alerts = await response.json();
+
+        const container =
+            document.getElementById("alertContainer");
+
+        container.innerHTML = "";
+
+        if (!alerts.length) {
+
+            container.innerHTML = `
+                <div class="no-alerts">
+                    No recent violations.
+                </div>
+            `;
+
+            return;
+        }
+
+        alerts.forEach(alert => {
+
+            const card = `
+    <div class="alert-card">
+
+        ${
+            alert.snapshot
+            ?
+            `
+            <img
+                src="${alert.snapshot}"
+                class="alert-image"
+            >
+            `
+            :
+            ""
+        }
+
+        <div class="alert-title">
+            🔴 PPE Violation
+        </div>
+
+        <div class="alert-person">
+            <strong>Track ID:</strong>
+            ${alert.track_id || "Unknown"}
+        </div>
+
+        <div>
+            ${alert.violation_type || "Missing PPE"}
+        </div>
+
+        <div class="alert-time">
+            ${alert.created_at || ""}
+        </div>
+
+    </div>
+`;
+
+            container.innerHTML += card;
+        });
+
+    } catch(error) {
+
+        console.error(error);
+
+    }
+
+}
+
+loadAlerts();
+
+setInterval(loadAlerts, 3000);
+
+</script>
+
+{% endblock %}

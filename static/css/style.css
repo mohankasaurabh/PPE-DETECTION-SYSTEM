@@ -1,0 +1,70 @@
+/*
+# ======================================
+# STYLE.CSS
+# ======================================
+
+# ======================================
+# PURPOSE
+# ======================================
+Explain:
+- This stylesheet gives the dashboard an enterprise dark-theme control-room appearance.
+- It solves the UI requirement for responsive layouts, cards, live feeds, event panels, and data tables.
+- Keeping custom styling in one file makes the frontend easy to brand for different clients.
+*/
+:root {
+  --bg: #0b1020;
+  --panel: #11182b;
+  --panel-2: #151f36;
+  --text: #e8edf7;
+  --muted: #95a1b8;
+  --accent: #4f8cff;
+  --danger: #ff4d5e;
+  --success: #29d391;
+  --border: rgba(255,255,255,0.08);
+}
+body { background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; }
+.app-shell { display: flex; min-height: 100vh; }
+.sidebar { width: 260px; background: #070b15; border-right: 1px solid var(--border); padding: 24px 18px; position: fixed; height: 100vh; overflow-y: auto; }
+.brand { font-size: 24px; font-weight: 800; margin-bottom: 24px; letter-spacing: -0.03em; }
+.nav-link { color: var(--muted); border-radius: 12px; padding: 10px 12px; margin-bottom: 4px; }
+.nav-link:hover { background: var(--panel-2); color: var(--text); }
+.content { margin-left: 260px; padding: 28px; width: calc(100% - 260px); }
+.topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+.topbar h1 { font-weight: 800; font-size: 30px; letter-spacing: -0.04em; margin: 0; }
+.muted { color: var(--muted); }
+.status-pill { padding: 8px 12px; border-radius: 999px; font-size: 13px; font-weight: 700; background: var(--panel-2); }
+.status-pill.success { color: var(--success); }
+.status-pill.danger { color: var(--danger); }
+.grid { display: grid; gap: 18px; }
+.cards-grid { grid-template-columns: repeat(4, minmax(160px, 1fr)); }
+.two-col { grid-template-columns: 1.4fr 1fr; }
+.card { background: linear-gradient(180deg, var(--panel), #0e1526); border: 1px solid var(--border); border-radius: 22px; box-shadow: 0 12px 40px rgba(0,0,0,0.25); }
+.kpi { padding: 20px; }
+.kpi span { color: var(--muted); font-size: 14px; }
+.kpi strong { display: block; font-size: 32px; margin-top: 8px; }
+.panel { padding: 20px; }
+.panel h2 { font-size: 20px; font-weight: 800; margin-bottom: 16px; }
+.panel h3 { font-size: 16px; font-weight: 700; }
+.panel-header { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.camera-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.camera-card { background: var(--panel-2); border: 1px solid var(--border); border-radius: 18px; padding: 14px; }
+.camera-title { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; font-weight: 700; }
+.live-feed { width: 100%; aspect-ratio: 16/9; object-fit: cover; background: #000; border-radius: 14px; border: 1px solid var(--border); }
+.camera-actions { margin-top: 10px; display: flex; gap: 8px; }
+.event-list { display: flex; flex-direction: column; gap: 10px; max-height: 520px; overflow-y: auto; }
+.event-item { padding: 12px; background: rgba(255, 77, 94, 0.10); border: 1px solid rgba(255, 77, 94, 0.28); border-radius: 14px; }
+.event-item strong { display: block; }
+.small-link { color: var(--accent); text-decoration: none; }
+.narrow { max-width: 760px; }
+.result-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.result-image, .video-result { width: 100%; border-radius: 16px; border: 1px solid var(--border); background: #000; }
+.json-box { background: #050915; border: 1px solid var(--border); color: #d8e2ff; padding: 16px; border-radius: 16px; max-height: 550px; overflow: auto; }
+.check-grid { display: grid; grid-template-columns: repeat(2, minmax(100px, 1fr)); gap: 8px; color: var(--muted); }
+.table { --bs-table-bg: transparent; }
+@media (max-width: 980px) {
+  .sidebar { position: static; width: 100%; height: auto; }
+  .app-shell { display: block; }
+  .content { margin-left: 0; width: 100%; padding: 18px; }
+  .cards-grid, .two-col, .result-grid { grid-template-columns: 1fr; }
+  .topbar { align-items: flex-start; gap: 12px; flex-direction: column; }
+}

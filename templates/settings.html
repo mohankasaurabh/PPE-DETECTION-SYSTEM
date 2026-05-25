@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}Settings{% endblock %}
+{% block page_heading %}System Settings{% endblock %}
+{% block content %}
+<!--
+# ======================================
+# SETTINGS PAGE
+# ======================================
+
+# ======================================
+# PURPOSE
+# ======================================
+Explain:
+- Shows runtime thresholds, paths, frame skip, persistence, cooldown, and model settings.
+- In production, this page can become an admin-only settings editor backed by the database.
+-->
+<div class="card panel">
+  <h2>Configuration Snapshot</h2>
+  <pre class="json-box">{
+  "model_path": "{{ config.MODEL_PATH }}",
+  "device": "{{ config.DEVICE }}",
+  "confidence": {{ config.CONF_THRESHOLD }},
+  "iou": {{ config.IOU_THRESHOLD }},
+  "frame_skip": {{ config.DEFAULT_FRAME_SKIP }},
+  "persistence_frames": {{ config.VIOLATION_PERSISTENCE_FRAMES }},
+  "resolve_after_seconds": {{ config.EVENT_RESOLVE_AFTER_SECONDS }},
+  "duplicate_cooldown_seconds": {{ config.DUPLICATE_COOLDOWN_SECONDS }},
+  "association_min_score": {{ config.ASSOCIATION_MIN_SCORE }},
+  "reid_enabled": {{ config.REID_ENABLED|tojson }}
+}</pre>
+</div>
+{% endblock %}
