@@ -1,6 +1,6 @@
 # 🦺 PPE Detection System
 
-An Enterprise-Level AI-Powered PPE (Personal Protective Equipment) Detection & Compliance Monitoring System built using **Flask, YOLO, ByteTrack, OpenCV, SQLite, and Real-Time Video Analytics**.
+An Enterprise-Level AI-Powered PPE (Personal Protective Equipment) Detection & Compliance Monitoring System built using **Flask, YOLO26s, ByteTrack, OpenCV, SQLite, and Real-Time Video Analytics**.
 
 This project detects whether workers are wearing required safety equipment such as:
 
@@ -26,9 +26,9 @@ The system supports:
 # 🚀 Features
 
 ## ✅ Real-Time PPE Detection
-This project uses a custom-trained YOLOv8 model (best.pt) for real-time PPE (Personal Protective Equipment) detection.
+This project uses a custom-trained YOLOv26s model (best.pt) for real-time PPE (Personal Protective Equipment) detection.
 
-The model was trained on a custom PPE dataset for approximately 1–1.5 hours using the Ultralytics YOLOv8 framework. The training process included multiple PPE classes such as:
+The model was trained on a custom PPE dataset for approximately 1–1.5 hours using the Ultralytics YOLO26s framework. The training process included multiple PPE classes such as:
 
 👷 Person
 🪖 Helmet
@@ -36,6 +36,15 @@ The model was trained on a custom PPE dataset for approximately 1–1.5 hours us
 😷 Mask
 ⛑️ Other PPE Equipment
 
+
+
+### Base Model
+
+The project was initially trained using:
+
+```bash
+yolo26s.pt
+``` 
 After training, the best-performing weights were saved as:
 
 ```bash
