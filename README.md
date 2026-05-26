@@ -1,4 +1,4 @@
-# 🦺 PPE Detection System
+# 🦺 AI-Powered PPE Detection System
 
 An Enterprise-Level AI-Powered PPE (Personal Protective Equipment) Detection & Compliance Monitoring System built using **Flask, YOLO26s, ByteTrack, OSNet ReID, OpenCV, SQLite, and Real-Time Video Analytics**.
 
