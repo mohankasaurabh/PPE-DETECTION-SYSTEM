@@ -3885,3 +3885,190 @@ Traceback (most recent call last):
   File "/Users/macbook/Downloads/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
     raise NotFound()
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:32 | ERROR | ppe.app | Thread-46 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:32 | ERROR | ppe.app | Thread-47 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:35 | ERROR | ppe.app | Thread-58 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:41 | ERROR | ppe.app | Thread-92 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:41 | ERROR | ppe.app | Thread-94 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:44 | ERROR | ppe.app | Thread-98 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:44 | ERROR | ppe.app | Thread-99 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:47 | ERROR | ppe.app | Thread-114 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:47 | ERROR | ppe.app | Thread-116 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:21:14 | ERROR | ppe.app | Thread-256 | Unhandled error: update() missing 1 required positional argument: 'detections'
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/app.py", line 160, in image_page
+    result = process_image(input_path)
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/app.py", line 536, in process_image
+    detections = tracker.update(detections)
+TypeError: update() missing 1 required positional argument: 'detections'
+2026-05-31 11:21:36 | ERROR | ppe.app | Thread-282 | Unhandled error: update() missing 1 required positional argument: 'detections'
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/app.py", line 160, in image_page
+    result = process_image(input_path)
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/app.py", line 536, in process_image
+    detections = tracker.update(detections)
+TypeError: update() missing 1 required positional argument: 'detections'
+2026-05-31 11:38:53 | ERROR | ppe.app | Thread-135 (process_request_thread) | Unhandled error: TrackerManager.update() missing 1 required positional argument: 'detections'
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/app.py", line 160, in image_page
+    result = process_image(input_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/app.py", line 536, in process_image
+    detections = tracker.update(detections)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TrackerManager.update() missing 1 required positional argument: 'detections'
+2026-05-31 11:40:55 | ERROR | ppe.app | Thread-31 (process_request_thread) | Unhandled error: TrackerManager.update() missing 1 required positional argument: 'detections'
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/app.py", line 160, in image_page
+    result = process_image(input_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/app.py", line 536, in process_image
+    detections = tracker.update(detections)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TrackerManager.update() missing 1 required positional argument: 'detections'

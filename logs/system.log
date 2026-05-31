@@ -3985,3 +3985,222 @@ werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on 
 2026-05-25 19:24:31 | INFO | ppe.event_manager | process-webcam_075170a0 | Created event evt_454a99a101294918 for ('webcam_075170a0', 'gid_bd8660f79e14', 'missing_vest')
 2026-05-25 19:25:12 | INFO | ppe.database | MainThread | Database initialized at /Users/macbook/Downloads/PPE-DETECTION-SYSTEM/ppe.db
 2026-05-25 22:03:49 | INFO | ppe.database | MainThread | Database initialized at /Users/macbook/Downloads/PPE-DETECTION-SYSTEM/ppe.db
+2026-05-31 11:19:03 | INFO | ppe.database | MainThread | Database initialized at /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/ppe.db
+2026-05-31 11:20:32 | ERROR | ppe.app | Thread-46 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:32 | ERROR | ppe.app | Thread-47 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:35 | ERROR | ppe.app | Thread-58 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:41 | ERROR | ppe.app | Thread-92 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:41 | ERROR | ppe.app | Thread-94 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:44 | ERROR | ppe.app | Thread-98 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:44 | ERROR | ppe.app | Thread-99 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:47 | ERROR | ppe.app | Thread-114 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:20:47 | ERROR | ppe.app | Thread-116 | Unhandled error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 278, in <lambda>
+    view_func=lambda **kw: self_ref().send_static_file(**kw),  # type: ignore
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 326, in send_static_file
+    return send_from_directory(
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/helpers.py", line 572, in send_from_directory
+    return werkzeug.utils.send_from_directory(  # type: ignore[return-value]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/werkzeug/utils.py", line 568, in send_from_directory
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-05-31 11:21:14 | INFO | ppe.detector | Thread-256 | Loaded YOLO model from /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/best.pt with classes: {0: 'helmet', 1: 'gloves', 2: 'vest', 3: 'boots', 4: 'goggles', 5: 'none', 6: 'Person', 7: 'no_helmet', 8: 'no_goggle', 9: 'no_gloves', 10: 'no_boots'}
+2026-05-31 11:21:14 | ERROR | ppe.app | Thread-256 | Unhandled error: update() missing 1 required positional argument: 'detections'
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/app.py", line 160, in image_page
+    result = process_image(input_path)
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/app.py", line 536, in process_image
+    detections = tracker.update(detections)
+TypeError: update() missing 1 required positional argument: 'detections'
+2026-05-31 11:21:35 | INFO | ppe.detector | Thread-282 | Loaded YOLO model from /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/best.pt with classes: {0: 'helmet', 1: 'gloves', 2: 'vest', 3: 'boots', 4: 'goggles', 5: 'none', 6: 'Person', 7: 'no_helmet', 8: 'no_goggle', 9: 'no_gloves', 10: 'no_boots'}
+2026-05-31 11:21:36 | ERROR | ppe.app | Thread-282 | Unhandled error: update() missing 1 required positional argument: 'detections'
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/app.py", line 160, in image_page
+    result = process_image(input_path)
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/app.py", line 536, in process_image
+    detections = tracker.update(detections)
+TypeError: update() missing 1 required positional argument: 'detections'
+2026-05-31 11:24:26 | INFO | ppe.database | MainThread | Database initialized at /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/ppe.db
+2026-05-31 11:36:57 | INFO | ppe.database | MainThread | Database initialized at /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/ppe.db
+2026-05-31 11:38:07 | INFO | ppe.database | MainThread | Database initialized at /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/ppe.db
+2026-05-31 11:38:52 | INFO | ppe.detector | Thread-135 (process_request_thread) | Loaded YOLO model from /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/best.pt with classes: {0: 'helmet', 1: 'gloves', 2: 'vest', 3: 'boots', 4: 'goggles', 5: 'none', 6: 'Person', 7: 'no_helmet', 8: 'no_goggle', 9: 'no_gloves', 10: 'no_boots'}
+2026-05-31 11:38:53 | ERROR | ppe.app | Thread-135 (process_request_thread) | Unhandled error: TrackerManager.update() missing 1 required positional argument: 'detections'
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/app.py", line 160, in image_page
+    result = process_image(input_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/app.py", line 536, in process_image
+    detections = tracker.update(detections)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TrackerManager.update() missing 1 required positional argument: 'detections'
+2026-05-31 11:40:14 | INFO | ppe.database | MainThread | Database initialized at /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/ppe.db
+2026-05-31 11:40:54 | INFO | ppe.detector | Thread-31 (process_request_thread) | Loaded YOLO model from /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/best.pt with classes: {0: 'helmet', 1: 'gloves', 2: 'vest', 3: 'boots', 4: 'goggles', 5: 'none', 6: 'Person', 7: 'no_helmet', 8: 'no_goggle', 9: 'no_gloves', 10: 'no_boots'}
+2026-05-31 11:40:55 | ERROR | ppe.app | Thread-31 (process_request_thread) | Unhandled error: TrackerManager.update() missing 1 required positional argument: 'detections'
+Traceback (most recent call last):
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/.venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/app.py", line 160, in image_page
+    result = process_image(input_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/app.py", line 536, in process_image
+    detections = tracker.update(detections)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TrackerManager.update() missing 1 required positional argument: 'detections'
+2026-05-31 11:42:16 | INFO | ppe.database | MainThread | Database initialized at /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/ppe.db
+2026-05-31 11:42:45 | INFO | ppe.detector | Thread-11 (process_request_thread) | Loaded YOLO model from /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/best.pt with classes: {0: 'helmet', 1: 'gloves', 2: 'vest', 3: 'boots', 4: 'goggles', 5: 'none', 6: 'Person', 7: 'no_helmet', 8: 'no_goggle', 9: 'no_gloves', 10: 'no_boots'}
+2026-05-31 11:50:57 | INFO | ppe.detector | Thread-58 (process_request_thread) | Loaded YOLO model from /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/best.pt with classes: {0: 'helmet', 1: 'gloves', 2: 'vest', 3: 'boots', 4: 'goggles', 5: 'none', 6: 'Person', 7: 'no_helmet', 8: 'no_goggle', 9: 'no_gloves', 10: 'no_boots'}
+2026-05-31 12:14:16 | INFO | ppe.detector | Thread-145 (process_request_thread) | Loaded YOLO model from /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/best.pt with classes: {0: 'helmet', 1: 'gloves', 2: 'vest', 3: 'boots', 4: 'goggles', 5: 'none', 6: 'Person', 7: 'no_helmet', 8: 'no_goggle', 9: 'no_gloves', 10: 'no_boots'}
+2026-05-31 12:14:19 | INFO | ppe.detector | Thread-146 (process_request_thread) | Loaded YOLO model from /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/best.pt with classes: {0: 'helmet', 1: 'gloves', 2: 'vest', 3: 'boots', 4: 'goggles', 5: 'none', 6: 'Person', 7: 'no_helmet', 8: 'no_goggle', 9: 'no_gloves', 10: 'no_boots'}
+2026-05-31 12:14:32 | INFO | ppe.event_manager | Thread-145 (process_request_thread) | Created event evt_901baf7d3d8a4f13 for ('video_19da397b83', 'gid_3d6a588ef0bb', 'missing_vest')
+2026-05-31 12:14:33 | INFO | ppe.event_manager | Thread-145 (process_request_thread) | Created event evt_870ef6d6475a486b for ('video_19da397b83', 'gid_3d6a588ef0bb', 'missing_helmet')
+2026-05-31 12:14:34 | INFO | ppe.event_manager | Thread-146 (process_request_thread) | Created event evt_a2dd2bb20b094682 for ('video_8312127e22', 'gid_35087ed1a4fe', 'missing_vest')
+2026-05-31 12:14:35 | INFO | ppe.event_manager | Thread-146 (process_request_thread) | Created event evt_01e56bcedadf4168 for ('video_8312127e22', 'gid_35087ed1a4fe', 'missing_helmet')
+2026-05-31 12:16:00 | INFO | ppe.detector | Thread-264 (process_request_thread) | Loaded YOLO model from /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/best.pt with classes: {0: 'helmet', 1: 'gloves', 2: 'vest', 3: 'boots', 4: 'goggles', 5: 'none', 6: 'Person', 7: 'no_helmet', 8: 'no_goggle', 9: 'no_gloves', 10: 'no_boots'}
+2026-05-31 12:16:02 | INFO | ppe.event_manager | Thread-264 (process_request_thread) | Created event evt_aa35abd6c06f4093 for ('video_d3306b56b6', 'gid_b10aaac367e6', 'missing_vest')
+2026-05-31 12:16:02 | INFO | ppe.event_manager | Thread-264 (process_request_thread) | Created event evt_a95d63d277134c9c for ('video_d3306b56b6', 'gid_b10aaac367e6', 'missing_helmet')
+2026-05-31 12:23:38 | INFO | ppe.database | MainThread | Database initialized at /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/ppe.db
+2026-05-31 12:24:05 | INFO | ppe.video_job | Thread-12 (_run) | Video writer using codec avc1
+2026-05-31 12:24:06 | INFO | ppe.detector | Thread-12 (_run) | Loaded YOLO model from /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/best.pt with classes: {0: 'helmet', 1: 'gloves', 2: 'vest', 3: 'boots', 4: 'goggles', 5: 'none', 6: 'Person', 7: 'no_helmet', 8: 'no_goggle', 9: 'no_gloves', 10: 'no_boots'}
+2026-05-31 12:24:08 | INFO | ppe.event_manager | Thread-12 (_run) | Created event evt_dd5bc256fd664239 for ('video_4f2bd9cae9', 'gid_d1ff6a9aab95', 'missing_vest')
+2026-05-31 12:24:08 | INFO | ppe.event_manager | Thread-12 (_run) | Created event evt_072d84e656d747eb for ('video_4f2bd9cae9', 'gid_d1ff6a9aab95', 'missing_helmet')
+2026-05-31 12:24:47 | INFO | ppe.video_job | Thread-12 (_run) | Video job video_4f2bd9cae9 finished (233 violations, 3 persons)
+2026-05-31 12:26:45 | INFO | ppe.video_job | Thread-235 (_run) | Video writer using codec avc1
+2026-05-31 12:26:45 | INFO | ppe.detector | Thread-235 (_run) | Loaded YOLO model from /Users/macbook/Downloads/kishan/project 1 ppe kit/PPE-DETECTION-SYSTEM/best.pt with classes: {0: 'helmet', 1: 'gloves', 2: 'vest', 3: 'boots', 4: 'goggles', 5: 'none', 6: 'Person', 7: 'no_helmet', 8: 'no_goggle', 9: 'no_gloves', 10: 'no_boots'}
+2026-05-31 12:26:46 | INFO | ppe.event_manager | Thread-235 (_run) | Created event evt_276b498fd2fd4c38 for ('video_4b97e0cd14', 'gid_e1c281249b1e', 'missing_vest')
+2026-05-31 12:26:47 | INFO | ppe.event_manager | Thread-235 (_run) | Created event evt_84210cf9d73d45e0 for ('video_4b97e0cd14', 'gid_e1c281249b1e', 'missing_helmet')
+2026-05-31 12:27:20 | INFO | ppe.video_job | Thread-235 (_run) | Video job video_4b97e0cd14 finished (233 violations, 3 persons)

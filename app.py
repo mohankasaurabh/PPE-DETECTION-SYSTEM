@@ -44,6 +44,7 @@ from utils.socket_events import register_socket_events
 from utils.stream_manager import STREAMS
 from utils.tracker_manager import TrackerManager
 from utils.video_detector import process_uploaded_video
+from utils.video_job_manager import VIDEO_JOBS, frame_generator as video_job_frames
 from utils.webcam_detector import register_webcam
 
 logger = get_logger("ppe.app")
@@ -188,13 +189,66 @@ def video_page():
 
     file.save(input_path)
 
-    result = process_uploaded_video(input_path)
+    # Process asynchronously so the browser can watch live detection while
+    # the clip is analysed, then jump to the final result page.
+    job = VIDEO_JOBS.start(input_path)
+
+    return render_template(
+        "video_processing.html",
+        job_id=job.job_id,
+        filename=filename
+    )
+
+
+@app.route("/video/result/<job_id>")
+def video_result_page(job_id: str):
+
+    job = VIDEO_JOBS.get(job_id)
+
+    if job is None:
+        flash("Video job not found or expired.", "danger")
+        return redirect(url_for("video_page"))
+
+    if job.state == "error":
+        return render_template(
+            "result.html",
+            result={"error": job.error},
+            mode="error"
+        ), 500
+
+    if job.state != "done":
+        # Still processing — send the user back to the live view.
+        return render_template(
+            "video_processing.html",
+            job_id=job.job_id,
+            filename=job.input_path.name
+        )
 
     return render_template(
         "result.html",
-        result=result,
+        result=job.result(),
         mode="video"
     )
+
+
+@app.route("/video_feed_upload/<job_id>")
+def video_feed_upload(job_id: str):
+
+    return Response(
+        video_job_frames(job_id),
+        mimetype="multipart/x-mixed-replace; boundary=frame"
+    )
+
+
+@app.route("/api/video-job/<job_id>")
+def api_video_job(job_id: str):
+
+    job = VIDEO_JOBS.get(job_id)
+
+    if job is None:
+        return jsonify({"ok": False, "error": "Job not found"}), 404
+
+    return jsonify(job.status())
 
 
 @app.route("/webcam")
@@ -533,7 +587,7 @@ def process_image(input_path: Path) -> Dict:
     # TRACKING
     # ======================================
 
-    detections = tracker.update(detections)
+    detections = tracker.update(frame, detections)
 
     # ======================================
     # PERSON FILTER

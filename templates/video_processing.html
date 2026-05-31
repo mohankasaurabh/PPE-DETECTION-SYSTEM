@@ -1,0 +1,350 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Live Video Detection
+{% endblock %}
+
+{% block page_heading %}
+Live Video Detection
+{% endblock %}
+
+{% block content %}
+
+<!--
+# ======================================
+# LIVE VIDEO PROCESSING PAGE
+# ======================================
+# Streams the annotated video frames as they are analysed (left) next to a
+# real-time PPE violation alert feed (right). When the job finishes it
+# auto-redirects to the final detection result page.
+-->
+
+<style>
+
+.live-layout {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 20px;
+    align-items: start;
+}
+
+.live-panel {
+    background: #111827;
+    border-radius: 18px;
+    padding: 20px;
+    border: 1px solid #1f2937;
+    color: white;
+}
+
+.live-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.live-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ef4444;
+    box-shadow: 0 0 0 0 rgba(239,68,68,0.6);
+    animation: pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(239,68,68,0.6); }
+    70%  { box-shadow: 0 0 0 12px rgba(239,68,68,0); }
+    100% { box-shadow: 0 0 0 0 rgba(239,68,68,0); }
+}
+
+.live-video {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid #1f2937;
+    background: #000;
+    display: block;
+}
+
+.progress-wrap {
+    margin-top: 18px;
+}
+
+.progress-track {
+    width: 100%;
+    height: 14px;
+    background: #1f2937;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    transition: width 0.4s ease;
+}
+
+.progress-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.stat-chips {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.chip {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+.chip strong {
+    font-size: 18px;
+    display: block;
+}
+
+.chip.danger strong { color: #f87171; }
+.chip.ok strong { color: #10b981; }
+
+.alert-sidebar {
+    background: #111827;
+    border-radius: 18px;
+    padding: 20px;
+    border: 1px solid #1f2937;
+    height: 88vh;
+    overflow-y: auto;
+    position: sticky;
+    top: 20px;
+}
+
+.alert-header {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: white;
+}
+
+.alert-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #374151;
+}
+
+.alert-card {
+    background: rgba(239,68,68,0.12);
+    border-left: 5px solid #ef4444;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 14px;
+    color: white;
+    animation: fadeIn 0.3s ease;
+}
+
+.alert-title {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #f87171;
+}
+
+.alert-person { font-size: 14px; margin-bottom: 4px; }
+.alert-time { font-size: 12px; opacity: 0.7; margin-top: 6px; }
+
+.no-alerts {
+    opacity: 0.7;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.done-banner {
+    margin-top: 16px;
+    padding: 14px;
+    border-radius: 12px;
+    background: rgba(16,185,129,0.12);
+    border: 1px solid #10b981;
+    color: #10b981;
+    font-weight: bold;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@media(max-width: 1100px) {
+    .live-layout { grid-template-columns: 1fr; }
+    .alert-sidebar { height: auto; position: relative; top: unset; }
+}
+
+</style>
+
+<div class="live-layout">
+
+    <!-- ======================================
+    LIVE ANNOTATED VIDEO
+    ====================================== -->
+
+    <div class="live-panel">
+
+        <div class="live-title">
+            <span class="live-dot"></span>
+            Analysing: {{ filename }}
+        </div>
+
+        <img
+            id="liveFeed"
+            class="live-video"
+            src="/video_feed_upload/{{ job_id }}"
+            alt="Live detection feed"
+        >
+
+        <div class="progress-wrap">
+            <div class="progress-track">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <div class="progress-meta">
+                <span id="progressText">Starting analysis...</span>
+                <span id="progressPct">0%</span>
+            </div>
+        </div>
+
+        <div class="stat-chips">
+            <div class="chip danger">
+                Violations
+                <strong id="statViolations">0</strong>
+            </div>
+            <div class="chip">
+                Frames
+                <strong id="statFrames">0 / 0</strong>
+            </div>
+        </div>
+
+        <div id="doneBanner" class="done-banner" style="display:none;">
+            ✅ Analysis complete — opening results...
+        </div>
+
+    </div>
+
+    <!-- ======================================
+    LIVE ALERT FEED
+    ====================================== -->
+
+    <div class="alert-sidebar">
+
+        <div class="alert-header">
+            🚨 Live Alerts
+        </div>
+
+        <div id="alertContainer">
+            <div class="no-alerts">
+                Waiting for violations...
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ======================================
+LIVE STATUS POLLING
+====================================== -->
+
+<script>
+
+const JOB_ID = "{{ job_id }}";
+let finished = false;
+
+function renderAlerts(alerts) {
+
+    const container = document.getElementById("alertContainer");
+
+    if (!alerts || !alerts.length) {
+        container.innerHTML = `
+            <div class="no-alerts">
+                No violations detected yet.
+            </div>`;
+        return;
+    }
+
+    container.innerHTML = alerts.map(alert => `
+        <div class="alert-card">
+            ${alert.snapshot
+                ? `<img src="${alert.snapshot}" class="alert-image">`
+                : ""}
+            <div class="alert-title">🔴 PPE Violation</div>
+            <div class="alert-person">
+                <strong>Worker:</strong> ${alert.track_id ?? "Unknown"}
+            </div>
+            <div>${alert.violation_type || "Missing PPE"}</div>
+            <div class="alert-time">${alert.created_at || ""}</div>
+        </div>
+    `).join("");
+}
+
+async function poll() {
+
+    if (finished) return;
+
+    try {
+        const res = await fetch(`/api/video-job/${JOB_ID}`);
+        if (!res.ok) return;
+
+        const data = await res.json();
+
+        const pct = data.progress || 0;
+        document.getElementById("progressFill").style.width = pct + "%";
+        document.getElementById("progressPct").textContent = pct + "%";
+        document.getElementById("statViolations").textContent =
+            data.violation_count || 0;
+        document.getElementById("statFrames").textContent =
+            `${data.processed_frames || 0} / ${data.total_frames || 0}`;
+
+        renderAlerts(data.alerts);
+
+        if (data.state === "processing") {
+            document.getElementById("progressText").textContent =
+                "Detecting PPE compliance...";
+        } else if (data.state === "done") {
+            finished = true;
+            document.getElementById("progressText").textContent =
+                "Complete";
+            document.getElementById("doneBanner").style.display = "block";
+            setTimeout(() => {
+                window.location.href =
+                    data.result_url || `/video/result/${JOB_ID}`;
+            }, 1200);
+        } else if (data.state === "error") {
+            finished = true;
+            document.getElementById("progressText").textContent =
+                "Processing failed: " + (data.error || "unknown error");
+        }
+
+    } catch (err) {
+        console.error(err);
+    }
+}
+
+poll();
+const pollTimer = setInterval(() => {
+    if (finished) { clearInterval(pollTimer); return; }
+    poll();
+}, 1500);
+
+</script>
+
+{% endblock %}

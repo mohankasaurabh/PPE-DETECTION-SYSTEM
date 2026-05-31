@@ -60,7 +60,7 @@ def process_uploaded_video(input_path: Path, rules: Dict | None = None) -> Dict:
         frame_id += 1
         if frame_id % max(1, CONFIG.DEFAULT_FRAME_SKIP) == 0:
             detections = detector.track_frame(frame, persist=True)
-            detections = tracker.update(detections)
+            detections = tracker.update(frame, detections)
             people = [d for d in detections if d.canonical_class == CONFIG.PERSON_CLASS]
             reid.update_person_identities(frame, people)
             associations = association.associate(detections)
